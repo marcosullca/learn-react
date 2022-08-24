@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+// import { Outlet, Route, Routes } from 'react-router';
+import RoutesObject from './Routes';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RoutesObject />
+    // <Routes>
+    //   <Route path="/ruta-secundaria1" element={<RutaSecundaria1 />}>
+    //     <Route index element={<p>Elemento data</p>} />
+
+    //     <Route path="datathings" caseSensitive element={<p>Elemento data-things</p>} />
+    //     <Route path="DATATHINGS" caseSensitive element={<p>Elemento data-things UPPER</p>} />
+
+    //   </Route>
+    //   <Route path="/" element={<p>Ruta inicial</p>} />
+    //   <Route path="/ruta-secundaria2" element={<p>Ruta secundaria2</p>} />
+    // </Routes>
   );
 }
 
